@@ -1,1 +1,20 @@
-this is a testing line
+Q1 What happens when you initialize a repository? Why do you need to do it?
+Answer: git create a empty repository for my folder or files which provides the tracking of different versions afterwards. It is successful when you see .git files shows up in the directory. 
+To track the different versions of my files which could boost performance of trakcing changes and make changes more safely and collebrate work between individuals. 
+
+Q2 How is the staging area different from the working directory and the repository? What value do you think it offers?
+Answer: It provides a butter between commit and repository. Sometimes you may change your mind or makes some mistakes such as commit a change that does not exist. 
+If there is no staing area, then all the operation are recorded by repository history which could make its history very hard to search and locate useful information. Staging area provoides a practice layer to insulate these to keep repository tight. 
+
+Q3: How can you use the staging area to make sure you have one commit per logical change?
+We could run git diff --staged to check the difference between files in stage area and repository. It is easy to observe if there is one logical change or mutiples. 
+
+Q4: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Additional branch is normally shared by multiple developer. If there is something you would like to try or test personally, creating an another branch provides flexibitility of making changes without disturbing master branch in which others might be working. 
+
+Q5: How do the diagrams help you visualize the branch structure?
+It differentiate the master branch with other branches by using indents in the log
+
+Q6: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging two branches into one where the commits are listed in order by time. The parent commit should also be changed accordingly.
+In the diagram, the two branches has the some starts and the same end. It works like two Dlinkedlist with a parent pointer.
